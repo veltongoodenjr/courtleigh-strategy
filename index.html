@@ -1,0 +1,225 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courtleigh Campaign Concepts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Lora', serif;
+      background: #fff;
+      display: flex; justify-content: center;
+    }
+    .container {
+      width: 95%; max-width: 800px;
+      padding: 20px; text-align: center;
+    }
+    .logo {
+      margin-bottom: 20px;
+      opacity: 0; transform: scale(0.8);
+      animation: fadeIn 0.8s forwards 0.2s;
+    }
+    .logo img { max-width: 180px; height: auto; }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #326130;
+      font-size: 2em; margin-bottom: 0.5em;
+      opacity: 0; transform: translateY(20px);
+      animation: fadeIn 0.8s forwards 0.4s;
+    }
+    .section {
+      background: #f9f9f9; border-radius: 8px;
+      padding: 16px; margin: 16px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      text-align: left;
+      opacity: 0; transform: translateY(30px);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .section.visible {
+      opacity: 1; transform: translateY(0);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .section:hover {
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transform: translateY(-4px);
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      color: #326130; font-size: 1.4em; margin-bottom: 0.5em;
+    }
+    .section ul { list-style: none; padding: 0; margin: 0; }
+    .section li {
+      margin: 8px 0; display: flex; align-items: start;
+      transition: transform 0.2s;
+    }
+    .section li:hover { transform: translateX(4px); }
+    .section li svg {
+      margin-right: 8px; flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+    .section li:hover svg { transform: rotate(15deg); }
+    .sub-bullets {
+      margin-top: 10px; padding-left: 32px;
+    }
+    .sub-bullets ul {
+      list-style: disc; color: #326130;
+      font-size: 0.95em; line-height: 1.6; padding-left: 1em;
+      margin: 0;
+    }
+    .sub-bullets li {
+      margin: 6px 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes jiggle {
+      0%, 100% { transform: scale(1); }
+      25% { transform: rotate(-2deg) scale(1.02); }
+      50% { transform: scale(1.05); }
+      75% { transform: rotate(2deg) scale(1.02); }
+    }
+    .button {
+      display: inline-block;
+      margin: 24px auto 80px;
+      padding: 12px 24px;
+      background: #900135; color: #fff;
+      text-decoration: none; border-radius: 4px;
+      font-family: 'Lora', serif;
+      opacity: 0; transform: scale(0.8);
+      animation: fadeIn 0.8s forwards 1.2s, jiggle 2s ease-in-out infinite;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #a1145c;
+    }
+    @media (max-width: 480px) {
+      .section { padding: 12px; }
+      h1 { font-size: 1.5em; }
+      .section h2 { font-size: 1.2em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://i.imgur.com/Ekjkzsp.png" alt="Courtleigh Logo">
+    </div>
+    <h1>Premium Campaign Concepts</h1>
+
+    <!-- Moments at Pegasus -->
+    <div class="section">
+      <h2>Moments at Pegasus</h2>
+      <ul>
+        <li>
+          <svg width="24" height="24" fill="#326130"><path d="M12 5a7 7 0 100 14 7 7 0 000-14zm9 2h-2l-1-2H6l-1 2H3a2 2 0 00-2 2v10a2 2 0 002 2h18a2 2 0 002-2V9a2 2 0 00-2-2zm-9 1a5 5 0 110 10 5 5 0 010-10z"/></svg>
+          Short-form Reels & Stories capturing luxury guest touchpoints with direct OTA CTAs
+        </li>
+        <li>
+          <svg width="24" height="24" fill="#f39c12"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 19.897 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg>
+          Leverage NPS & user-generated clips for authentic experiential marketing
+        </li>
+      </ul>
+      <div class="sub-bullets">
+        <ul>
+          <li><strong>Emotion-first hook</strong>: Begin with joy or surprise in the first 3 seconds</li>
+          <li><strong>Reel-to-email flow</strong>: Use CTAs to lead directly to booking landing pages</li>
+          <li><strong>Comment mining</strong>: Turn viewer reactions into next-episode ideas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Courtleigh Signature Series -->
+    <div class="section">
+      <h2>Courtleigh Signature Series</h2>
+      <ul>
+        <li>
+          <svg width="24" height="24" fill="#326130"><path d="M4 4h16v16H4z" fill="none"/><path d="M22 2H2v20h20V2zm-2 18H4V4h16v16z"/></svg>
+          Mini-documentaries spotlighting curated experiences to elevate brand storytelling
+        </li>
+        <li>
+          <svg width="24" height="24" fill="#A88145"><path d="M3 17h2v4H3zM7 13h2v8H7zM11 9h2v12h-2zM15 5h2v16h-2zM19 11h2v10h-2z"/></svg>
+          Showcase performance metrics to underscore views and engagement impact
+        </li>
+      </ul>
+      <div class="sub-bullets">
+        <ul>
+          <li><strong>Thought-leader positioning</strong>: Feature exec insights and concierge tips</li>
+          <li><strong>Cross-format snippets</strong>: Repurpose episodes into quotes and audio bites</li>
+          <li><strong>Evergreen SEO</strong>: Publish transcripts to boost organic search</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Local Flavors -->
+    <div class="section">
+      <h2>Local Flavors</h2>
+      <ul>
+        <li>
+          <svg width="24" height="24" fill="#326130"><path d="M12 2a5 5 0 00-5 5v1H6v2h12V7h-1V6a5 5 0 00-5-4zM6 11v7h12v-7H6z"/></svg>
+          Monthly chef-led IG Live + carousel posts featuring farm-to-table & CSR partners
+        </li>
+        <li>
+          <svg width="24" height="24" fill="#A88145"><path d="M17.65 6.35A7.958 7.958 0 0012 4a8 8 0 00-8 8h-2l3.89 3.89L9 14H7a6 6 0 116 6c1.66 0 3.14-.69 4.24-1.76l1.41 1.41A7.95 7.95 0 0012 20a8 8 0 007.65-5.65c.18-.71-.36-1.35-1.1-1.35H19a6 6 0 01-6 6c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.93 0 3.68.78 4.95 2.05l-1.41 1.41z"/></svg>
+          Repurpose videos into email GIFs, LinkedIn BTS & WhatsApp story slides
+        </li>
+      </ul>
+      <div class="sub-bullets">
+        <ul>
+          <li><strong>Dual-purpose Lives</strong>: Engage live audience + clip for shorts</li>
+          <li><strong>F&B revenue boost</strong>: Showcase ingredient sourcing in posts</li>
+          <li><strong>Trend stacking</strong>: Pair local audio trends with dish reveals</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Insider’s Kingston -->
+    <div class="section">
+      <h2>Insider’s Kingston</h2>
+      <ul>
+        <li>
+          <svg width="24" height="24" fill="#326130"><path d="M20.5 3l-6.5 2-6-2L3.5 5v16l6.5-2 6 2 6.5-2V3z"/></svg>
+          Downloadable MICE planner guides promoted via LinkedIn to drive group block bookings
+        </li>
+        <li>
+          <svg width="24" height="24" fill="#A88145"><path d="M2 4h20v16H2z" fill="none"/><path d="M22 2H2v20h20V2zm-2 18H4V4h16v16m-8-5L4 6h16l-8 9z"/></svg>
+          Integrate PMS data for personalized pre-arrival email upsell offers
+        </li>
+      </ul>
+      <div class="sub-bullets">
+        <ul>
+          <li><strong>Lead magnet logic</strong>: Exchange PDF guides for planner emails</li>
+          <li><strong>Geo-customisation</strong>: Tailor content for Caribbean vs diaspora</li>
+          <li><strong>Carousel ranking</strong>: “Top 5” posts to maximize saves & shares</li>
+        </ul>
+      </div>
+    </div>
+
+    <a
+      href="mailto:veltongoodenjr@gmail.com?subject=Exploring%20Campaign%20Concepts%20with%20Velton%20Gooden%20Jr&body=Dear%20Velton%20Gooden%20Jr%2C%0A%0AWe%20are%20impressed%20with%20your%20Premium%20Campaign%20Concepts%20for%20Courtleigh%20Hospitality%20Group.%20We%20would%20like%20to%20explore%20these%20initiatives%20with%20you%20and%20discuss%20next%20steps.%0A%0APlease%20let%20us%20know%20your%20availability.%0A%0ABest%20regards%2C%0ACourtleigh%20Hospitality%20Group"
+      class="button"
+    >
+      Let’s get started
+    </a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.section');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      sections.forEach(s => io.observe(s));
+    });
+  </script>
+</body>
+</html>
+```
